@@ -7,7 +7,7 @@ import { Home } from './pages/home'
 import type { Routes } from '#common/types'
 import type { HTTPException } from 'hono/http-exception'
 
-export class App {
+export default class App {
   private app: OpenAPIHono
 
   constructor(routes: Routes[]) {
