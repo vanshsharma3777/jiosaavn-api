@@ -8,8 +8,12 @@
     "rootDir": "./src",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "paths": { "#modules/*": ["src/modules/*"], "#common/*": ["src/common/*"] },
+    "paths": {
+      "#modules/*": ["src/modules/*"],
+      "#common/*": ["src/common/*"]
+    },
     "resolveJsonModule": true,
+    "types": ["bun-types"],
     "strict": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
@@ -22,5 +26,7 @@
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules"],
-  "tsc-alias": { "resolveFullPaths": true }
+  "tsc-alias": {
+    "resolveFullPaths": true
+  }
 }
