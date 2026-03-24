@@ -16,7 +16,8 @@ const PORT = process.env.PORT || 3000
 
 serve({
   fetch: app.fetch,
-  port: Number(PORT)
+  port: Number(PORT),
+    hostname: "0.0.0.0"   
 })
 
 console.info(`Server running on port ${PORT}`)
