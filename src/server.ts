@@ -2,8 +2,7 @@ import { AlbumController, ArtistController, SearchController, SongController } f
 import { PlaylistController } from '#modules/playlists/controllers'
 import { serve } from 'bun'
 import App from './app'
-import process from "node:process"
-
+import process from 'node:process'
 
 const app = new App([
   new SearchController(),
